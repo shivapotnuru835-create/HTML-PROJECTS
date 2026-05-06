@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EcoBottle - Product Website</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:Georgia, 'Times New Roman', serif;
+      background:black;
+      color:white;
+    }
+
+    /* ================= HERO ================= */
+
+    #hero{
+      position:relative;
+      overflow:hidden;
+    }
+
+    #bg-video{
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      z-index:-2;
+    }
+
+    #overlay{
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background:rgba(0,0,0,0.45);
+      z-index:-1;
+    }
+
+    /* ================= BORDER FRAME ================= */
+
+ /* ================= BORDER FRAME ================= */
+#hero-border-frame {
+    position: relative;
+    margin: 12px 20px;           /* ← Added space from window edges */
+    padding: 8px;
+    border-top: 4px solid transparent;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: none;
+
+    border-image: linear-gradient(
+        to right,
+        red,
+        orange,
+        yellow,
+        lime,
+        cyan,
+        blue,
+        violet
+    ) 1;
+    
+    border-radius: 4px;          /* Optional: slight rounded corners */
+}
+    /* Add this */
+   
+    /* ================= NAV ================= */
+
+    nav{
+      padding:14px 20px;
+      font-size:14px;
+    }
+
+    nav a{
+      color:#4fc3f7;
+      text-decoration:underline;
+      margin-right:4px;
+    }
+
+    nav a:hover{
+      color:white;
+    }
+
+    /* ================= HERO TEXT ================= */
+
+    .hero-text{
+      padding:25px 30px 10px;
+    }
+
+    .hero-text h1{
+  font-size:2.3rem;
+  margin-bottom:10px;
+}
+
+.hero-text h2{
+  font-size:1.2rem;
+}
+
+.reviews-section h2{
+  color:#ffd700;
+  font-size:2rem;
+  margin-bottom:20px;
+}
+
+.review-item blockquote{
+  color:#ffd700;
+  font-size:1.2rem;
+  font-style:italic;
+}
+
+.review-item cite{
+  display:block;
+  margin-top:5px;
+  color:#ffd700;
+  font-size:1rem;
+}
+
+    /* ================= MARQUEE ================= */
+
+    .marquee-wrap{
+      padding:20px 0;
+      font-size:1.3rem;
+      color:white;
+    }
+
+    /* ================= GALLERY ================= */
+
+    .gallery-section{
+      padding:20px 30px 30px;
+    }
+
+    .gallery-section h2{
+      font-size:2.5rem;
+      margin-bottom:20px;
+    }
+
+    .gallery-section img{
+      width:220px;
+      height:220px;
+      object-fit:cover;
+      margin-right:10px;
+    }
+
+    /* ================= COLORFUL LINE ================= */
+
+     /* ================= COLORFUL LINE ================= */
+/* ================= COLORFUL LINE ================= */
+.gradient-line {
+    border: none;
+    height: 4px;
+    width: 100%;
+    margin: 0;
+    background: linear-gradient(
+        to right,
+        red,
+        orange,
+        yellow,
+        lime,
+        cyan,
+        blue,
+        violet
+    );
+}
+
+
+      .reviews-section{
+        padding:25px 35px 60px;
+      }
+
+   
+
+    .review-item{
+      margin-bottom:25px;
+    }
+
+  
+   
+
+    /* ================= CONTENT ================= */
+
+    .content-section{
+      background:white;
+      color:black;
+      padding:40px;
+    }
+
+    .content-section h2{
+      margin-top:30px;
+      margin-bottom:10px;
+      font-size:2rem;
+    }
+
+    .content-section p{
+      line-height:1.6;
+      margin-bottom:15px;
+    }
+
+    .content-section ul{
+      padding-left:20px;
+    }
+
+    .content-section li{
+      margin-bottom:8px;
+    }
+
+    /* ================= TABLE ================= */
+
+    .spec-table{
+      border-collapse:collapse;
+      margin-top:15px;
+    }
+
+    .spec-table td{
+      border:1px solid black;
+      padding:10px 18px;
+    }
+
+    .spec-table td:first-child{
+      font-weight:bold;
+      background:#f2f2f2;
+    }
+
+    /* ================= VIDEO ================= */
+
+    .video-section{
+      margin-top:30px;
+    }
+
+    .video-section video{
+      margin-top:15px;
+      width:560px;
+      max-width:100%;
+    }
+
+    /* ================= FAQ ================= */
+
+    details{
+      margin-bottom:10px;
+    }
+
+    details summary{
+      cursor:pointer;
+    }
+
+    details p{
+      margin-top:8px;
+      padding-left:18px;
+    }
+
+    /* ================= CONTACT ================= */
+
+    .contact-section{
+      margin-top:30px;
+    }
+
+    .contact-section label{
+      display:block;
+      margin-bottom:5px;
+    }
+
+    .contact-section input,
+    .contact-section textarea{
+      width:250px;
+      padding:6px;
+      margin-bottom:15px;
+      border:1px solid gray;
+      font-family:inherit;
+    }
+
+    .contact-section textarea{
+      height:90px;
+    }
+
+   .contact-section input[type="submit"]{
+  display:block;
+  width:90px;
+  padding:6px;
+  margin-top:5px;
+  cursor:pointer;
+}
+
+
+    /* ================= FOOTER ================= */
+
+    footer{
+      background:white;
+      color:black;
+      padding:20px 40px;
+    }
+
+    footer p{
+      margin-bottom:8px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- ================= HERO ================= -->
+
+  <section id="hero">
+
+    <video id="bg-video" autoplay muted loop playsinline>
+      <source src="https://cdn.pixabay.com/video/2024/02/06/199596-910653729_large.mp4" type="video/mp4">
+    </video>
+
+    <div id="overlay"></div>
+
+    <!-- ================= BORDER BOX ================= -->
+
+    <div id="hero-border-frame">
+
+      <!-- NAV -->
+
+      <nav>
+        <a href="#about">About</a> |
+        <a href="#features">Features</a> |
+        <a href="#specs">Specifications</a> |
+        <a href="#gallery">Gallery</a> |
+        <a href="#reviews">Reviews</a> |
+        <a href="#faq">FAQ</a> |
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- HERO TEXT -->
+
+      <div class="hero-text">
+        <h1>EcoBottle</h1>
+        <h2>Stay Hydrated, Save the Planet</h2>
+      </div>
+
+      <!-- MARQUEE -->
+
+      <div class="marquee-wrap">
+        <marquee behavior="scroll" direction="left" scrollamount="5">
+          🎉 Big Summer Sale! Get your EcoBottle now for just $15 – Limited Time Offer! 🎉
+        </marquee>
+      </div>
+
+      <!-- GALLERY -->
+
+      <div class="gallery-section" id="gallery">
+
+        <h2>Gallery</h2>
+
+        <img src="https://hips.hearstapps.com/hmg-prod/images/701/indestructable-hydro-flask-water-bottles-black-friday-1511616967.jpg?crop=1xw:0.786xh;center,top&resize=1200:*">
+
+        <img src="https://pinaywise.com/wp-content/uploads/2024/02/Hydro-Flask-Wide-Mouth-with-Straw-2048x2048.jpg">
+
+        <img src="https://i.pinimg.com/736x/d9/8b/ea/d98beaeeb12e2a789dd80e0aaec4d5aa.jpg">
+
+        <img src="https://content.backcountry.com/images/items/large/HYF/HYFZ01H/GOJ_D1.jpg">
+
+        <img src="https://www.brainiacsbest.com/content/images/size/w600/2023/07/Hydro-Flask-Wide-Mouth-Straw-Lid-32-oz.--2-.jpg">
+
+      </div>
+
+    </div>
+
+    <!-- ONLY LINE ABOVE REVIEWS -->
+
+    <hr class="gradient-line">
+
+    <!-- REVIEWS -->
+
+    <div class="reviews-section" id="reviews">
+
+      <h2>Customer Reviews</h2>
+
+      <div class="review-item">
+        <blockquote>"Best water bottle I've ever owned!"</blockquote>
+        <cite>- Sarah</cite>
+      </div>
+
+      <div class="review-item">
+        <blockquote>"Keeps my drinks cold for hours."</blockquote>
+        <cite>- James</cite>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= CONTENT ================= -->
+
+  <div class="content-section">
+
+    <h2 id="about">About EcoBottle</h2>
+
+    <p>
+      The EcoBottle is a reusable water bottle designed to reduce plastic waste while keeping your drinks fresh all day. Perfect for travel, work, and fitness.
+    </p>
+
+    <h2 id="features">Key Features</h2>
+
+    <ul>
+      <li>BPA-free stainless steel</li>
+      <li>Leak-proof design</li>
+      <li>750ml capacity</li>
+      <li>Available in multiple colors</li>
+    </ul>
+
+    <h2 id="specs">Specifications</h2>
+
+    <table class="spec-table">
+      <tr>
+        <td>Price</td>
+        <td>$15</td>
+      </tr>
+
+      <tr>
+        <td>Material</td>
+        <td>Stainless Steel</td>
+      </tr>
+
+      <tr>
+        <td>Size</td>
+        <td>750ml</td>
+      </tr>
+
+      <tr>
+        <td>Warranty</td>
+        <td>1 Year</td>
+      </tr>
+    </table>
+
+    <!-- VIDEO -->
+
+    <div class="video-section">
+
+  <h2>Watch Our Product in Action</h2>
+
+  <p>
+    🎥 Discover how EcoBottle keeps your drinks fresh and helps save the planet!
+  </p>
+
+  <p class="tagline">
+    <strong>Tagline:</strong>
+    "EcoBottle – Hydration Meets Sustainability"
+  </p>
+
+</div>
+
+    <!-- FAQ -->
+
+    <div class="faq-section">
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+
+      <details>
+        <summary>Is the EcoBottle dishwasher safe?</summary>
+        <p>Yes, the EcoBottle is dishwasher safe on the top rack.</p>
+      </details>
+
+      <details>
+        <summary>Does it keep drinks hot?</summary>
+        <p>
+          Yes, the double-wall insulation keeps drinks hot for up to 12 hours and cold for 24 hours.
+        </p>
+      </details>
+
+    </div>
+
+    <!-- CONTACT -->
+
+    <div class="contact-section">
+
+      <h2 id="contact">Contact Us</h2>
+
+      <form>
+
+        <label>Name:</label>
+        <input type="text">
+
+        <label>Email:</label>
+        <input type="email">
+
+        <label>Message:</label>
+        <textarea></textarea>
+
+        <input type="submit" value="Submit">
+
+      </form>
+
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <p>Contact: support@ecobottle.com</p>
+
+    <p>© 2026 EcoBottle Inc. | All Rights Reserved</p>
+
+  </footer>
+
+</body>
+</html>
