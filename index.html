@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<<<<<<< HEAD
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>EcoBottle - Product Website</title>
@@ -19,8 +18,6 @@
       background:black;
       color:white;
     }
-
-    /* ================= HERO ================= */
 
     #hero{
       position:relative;
@@ -47,19 +44,16 @@
       z-index:-1;
     }
 
-    /* ================= BORDER FRAME ================= */
+    #hero-border-frame {
+      position: relative;
+      margin: 12px 20px;
+      padding: 8px;
+      border-top: 4px solid transparent;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-bottom: none;
 
- /* ================= BORDER FRAME ================= */
-#hero-border-frame {
-    position: relative;
-    margin: 12px 20px;           /* ← Added space from window edges */
-    padding: 8px;
-    border-top: 4px solid transparent;
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent;
-    border-bottom: none;
-
-    border-image: linear-gradient(
+      border-image: linear-gradient(
         to right,
         red,
         orange,
@@ -68,13 +62,10 @@
         cyan,
         blue,
         violet
-    ) 1;
-    
-    border-radius: 4px;          /* Optional: slight rounded corners */
-}
-    /* Add this */
-   
-    /* ================= NAV ================= */
+      ) 1;
+
+      border-radius: 4px;
+    }
 
     nav{
       padding:14px 20px;
@@ -91,49 +82,43 @@
       color:white;
     }
 
-    /* ================= HERO TEXT ================= */
-
     .hero-text{
       padding:25px 30px 10px;
     }
 
     .hero-text h1{
-  font-size:2.3rem;
-  margin-bottom:10px;
-}
+      font-size:2.3rem;
+      margin-bottom:10px;
+    }
 
-.hero-text h2{
-  font-size:1.2rem;
-}
+    .hero-text h2{
+      font-size:1.2rem;
+    }
 
-.reviews-section h2{
-  color:#ffd700;
-  font-size:2rem;
-  margin-bottom:20px;
-}
+    .reviews-section h2{
+      color:#ffd700;
+      font-size:2rem;
+      margin-bottom:20px;
+    }
 
-.review-item blockquote{
-  color:#ffd700;
-  font-size:1.2rem;
-  font-style:italic;
-}
+    .review-item blockquote{
+      color:#ffd700;
+      font-size:1.2rem;
+      font-style:italic;
+    }
 
-.review-item cite{
-  display:block;
-  margin-top:5px;
-  color:#ffd700;
-  font-size:1rem;
-}
-
-    /* ================= MARQUEE ================= */
+    .review-item cite{
+      display:block;
+      margin-top:5px;
+      color:#ffd700;
+      font-size:1rem;
+    }
 
     .marquee-wrap{
       padding:20px 0;
       font-size:1.3rem;
       color:white;
     }
-
-    /* ================= GALLERY ================= */
 
     .gallery-section{
       padding:20px 30px 30px;
@@ -151,16 +136,12 @@
       margin-right:10px;
     }
 
-    /* ================= COLORFUL LINE ================= */
-
-     /* ================= COLORFUL LINE ================= */
-/* ================= COLORFUL LINE ================= */
-.gradient-line {
-    border: none;
-    height: 4px;
-    width: 100%;
-    margin: 0;
-    background: linear-gradient(
+    .gradient-line {
+      border: none;
+      height: 4px;
+      width: 100%;
+      margin: 0;
+      background: linear-gradient(
         to right,
         red,
         orange,
@@ -169,24 +150,16 @@
         cyan,
         blue,
         violet
-    );
-}
+      );
+    }
 
-
-      .reviews-section{
-        padding:25px 35px 60px;
-      }
-
-   
+    .reviews-section{
+      padding:25px 35px 60px;
+    }
 
     .review-item{
       margin-bottom:25px;
     }
-
-  
-   
-
-    /* ================= CONTENT ================= */
 
     .content-section{
       background:white;
@@ -213,8 +186,6 @@
       margin-bottom:8px;
     }
 
-    /* ================= TABLE ================= */
-
     .spec-table{
       border-collapse:collapse;
       margin-top:15px;
@@ -230,8 +201,6 @@
       background:#f2f2f2;
     }
 
-    /* ================= VIDEO ================= */
-
     .video-section{
       margin-top:30px;
     }
@@ -241,8 +210,6 @@
       width:560px;
       max-width:100%;
     }
-
-    /* ================= FAQ ================= */
 
     details{
       margin-bottom:10px;
@@ -256,8 +223,6 @@
       margin-top:8px;
       padding-left:18px;
     }
-
-    /* ================= CONTACT ================= */
 
     .contact-section{
       margin-top:30px;
@@ -281,16 +246,13 @@
       height:90px;
     }
 
-   .contact-section input[type="submit"]{
-  display:block;
-  width:90px;
-  padding:6px;
-  margin-top:5px;
-  cursor:pointer;
-}
-
-
-    /* ================= FOOTER ================= */
+    .contact-section input[type="submit"]{
+      display:block;
+      width:90px;
+      padding:6px;
+      margin-top:5px;
+      cursor:pointer;
+    }
 
     footer{
       background:white;
@@ -307,8 +269,6 @@
 
 <body>
 
-  <!-- ================= HERO ================= -->
-
   <section id="hero">
 
     <video id="bg-video" autoplay muted loop playsinline>
@@ -317,11 +277,7 @@
 
     <div id="overlay"></div>
 
-    <!-- ================= BORDER BOX ================= -->
-
     <div id="hero-border-frame">
-
-      <!-- NAV -->
 
       <nav>
         <a href="#about">About</a> |
@@ -333,22 +289,16 @@
         <a href="#contact">Contact</a>
       </nav>
 
-      <!-- HERO TEXT -->
-
       <div class="hero-text">
         <h1>EcoBottle</h1>
         <h2>Stay Hydrated, Save the Planet</h2>
       </div>
-
-      <!-- MARQUEE -->
 
       <div class="marquee-wrap">
         <marquee behavior="scroll" direction="left" scrollamount="5">
           🎉 Big Summer Sale! Get your EcoBottle now for just $15 – Limited Time Offer! 🎉
         </marquee>
       </div>
-
-      <!-- GALLERY -->
 
       <div class="gallery-section" id="gallery">
 
@@ -368,11 +318,7 @@
 
     </div>
 
-    <!-- ONLY LINE ABOVE REVIEWS -->
-
     <hr class="gradient-line">
-
-    <!-- REVIEWS -->
 
     <div class="reviews-section" id="reviews">
 
@@ -391,8 +337,6 @@
     </div>
 
   </section>
-
-  <!-- ================= CONTENT ================= -->
 
   <div class="content-section">
 
@@ -435,24 +379,20 @@
       </tr>
     </table>
 
-    <!-- VIDEO -->
-
     <div class="video-section">
 
-  <h2>Watch Our Product in Action</h2>
+      <h2>Watch Our Product in Action</h2>
 
-  <p>
-    🎥 Discover how EcoBottle keeps your drinks fresh and helps save the planet!
-  </p>
+      <p>
+        🎥 Discover how EcoBottle keeps your drinks fresh and helps save the planet!
+      </p>
 
-  <p class="tagline">
-    <strong>Tagline:</strong>
-    "EcoBottle – Hydration Meets Sustainability"
-  </p>
+      <p class="tagline">
+        <strong>Tagline:</strong>
+        "EcoBottle – Hydration Meets Sustainability"
+      </p>
 
-</div>
-
-    <!-- FAQ -->
+    </div>
 
     <div class="faq-section">
 
@@ -471,8 +411,6 @@
       </details>
 
     </div>
-
-    <!-- CONTACT -->
 
     <div class="contact-section">
 
@@ -497,8 +435,6 @@
 
   </div>
 
-  <!-- FOOTER -->
-
   <footer>
 
     <p>Contact: support@ecobottle.com</p>
@@ -509,80 +445,3 @@
 
 </body>
 </html>
-=======
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <a href="#about">about</a>
-    <a href="#Features">Features</a>
-    <a href="#Specification">Specification</a>
-    <a href="#Gallery">Gallery</a>
-    <a href="#Reviews">Reviews</a>
-    <a href="#FAQ">FAQ</a>
-    <a HREF="Contact">Contact</a><br>
-    <h1>Eco Bottle</h1>
-    <h2>Stay Hydrated, Save the Plant</h2>
-    <a href="#Order Now">Order Now</a>
-    <marquee>r EcoBottle now for just $15 - Limited Time OFFER!</marquee>
-    <h1>About EcoBOTTLE</h1>
-    <P>The EcoBottle is a reusable water bottle designed to reduce plastic waste while keeping your drins fresh all day.Perfect for travel,workk, and fitness</P>
-<h1>Key Features</h1>
-<li>
-    <ol>BPA-free stainless steel</ol>
-    <ol>Leak
-        -proof design
-    </ol>
-    <ol>750ml capacity</ol>
-    <ol>Available in multiple colors</ol>
-</li>
-<h1>Specifications</h1>
-<table border="2px solid black">
-    <tr>
-        <th>price</th>
-        <td>$15</td>
-    </tr>
-    <tr>
-        <th>Material</th>
-        <td>Stainless Steel</td>
-    </tr>
-    <tr>
-        <th>Size</th>
-        <td>750ml</td>
-    </tr>
-    <tr>
-        <th>Warrenty</th>
-        <td>1 Year</td>
-    </tr>
-</table>
-    <h1>Gallery</h1>
-
-<img src="uu.jpeg" alt="image">
-<h1>Watch Our Product in Action</h1><br>
-<p>Discover how EcoBottle keeps your drinks fresh and helps save the plant</p>
-<video controls src="uuj.mp4" width="500px" height="300px"></video>
-<h5>Tagline:</h5> <span>"EcoBottle--Hydration Meets Sustainability"</span>
-<h1>Customer Reviews</h1>
-     <pre>       "Best water bottle I've ever owned!"</pre>
-     <p>-Sarah</p>
-     <pre>      "Keeps my drinks cold for hours"</pre>
-     <p>-james</p>
-     <h1>Frequently Asked Questions</h1>
-     <ol type="triangle">
-        <li>is the EcoBottle dishwasher safe</li>
-        <li>Does it keep drinks hot?</li>
-     </ol>
-     <h1>Contact Us</h1>
-     Name:
-     <input type="text"><br><br>
-    Email:
-    <input type="email"><br><br>
-    Message:
-    <textarea rows="4" columns="20"></textarea><br><br>
-    <input type="submit">
-    <p>Contact:support @ecobottle.com</p>
-    <p>&copy;2026 EcoBottle Inc.|All Rights Reserved</p>
-</body>
-</html>
->>>>>>> 8443415da856730a68a95a5b8479f8b1412a5c9a
